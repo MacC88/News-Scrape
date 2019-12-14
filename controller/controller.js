@@ -13,7 +13,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/scrape', function(req, res) {
-    request('http://www.theverge.com/tech', function(error, response, html) {
+    request('http://www.theverge.com/science', function(error, response, html) {
         var $ = cheerio.load(html);
         var titlesArray = [];
         $('.c-entry-box--compact__title').each(function(i, element) {
