@@ -18,7 +18,7 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-mongoose.connect('mongodb://heroku_4jd58n5g:hhh79g1264te294u11gojra4ki@ds253418.mlab.com:53418/heroku_4jd58n5g');
+mongoose.connect('');
 
 
 var db = mongoose.connection;
